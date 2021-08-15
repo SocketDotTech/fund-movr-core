@@ -1,14 +1,27 @@
 import { constants } from '../constants'
 import { Address } from './type'
 export const addresses: { [chainId: number]: Address } = {
+  1: {
+    extraData: {
+      ERC20PredicateProxy: '0x40ec5B33f54e0E8A33A975908C5BA1c14e5BbbDf',
+      ERC721PredicateProxy: '0xE6F45376f64e1F568BD1404C155e5fFD2F80F7AD',
+      RootChainManagerProxy: '0xA0c68C638235ee32657e8f720a23ceC1bFc77C77',
+    },
+  },
   5: {
     registry: '0xE1c57390e16697581108aEd6d6af34589FF003B1',
     [constants.bridges.Hop]: '0x5459b12b8e3d2ae06b1ea548b9867e7c244f8b64',
-    [constants.bridges.PolygonBridge]: '0xbbd6bbcf144d814c593baa755afe1e2165ce3273',
+    [constants.bridges.PolygonBridge]:
+      '0xbbd6bbcf144d814c593baa755afe1e2165ce3273',
     chainInfo: {
       chainId: 5,
       name: 'goerli',
       isL1: true,
+    },
+    extraData: {
+      RootChainManagerProxy: '0xBbD7cBFA79faee899Eaf900F13C9065bF03B1A74',
+      ERC20PredicateProxy: '0xdD6596F2029e6233DEFfaCa316e6A95217d4Dc34',
+      ERC721PredicateProxy: '0x74D83801586E9D3C4dc45FfCD30B54eA9C88cf9b',
     },
   },
   42: {
