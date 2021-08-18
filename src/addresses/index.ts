@@ -9,10 +9,10 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
   5: {
-    registry: '0xE1c57390e16697581108aEd6d6af34589FF003B1',
-    [constants.bridges.Hop]: '0x5459b12b8e3d2ae06b1ea548b9867e7c244f8b64',
+    registry: '0xCB1463E75D57121135Eb037079F6C6B04d635822',
+    [constants.bridges.Hop]: '0xCB6db7eff52E4558aBE5A03edA87093333ff7615',
     [constants.bridges.PolygonBridge]:
-      '0xbbd6bbcf144d814c593baa755afe1e2165ce3273',
+      '0xd2ed8218a109882c23e5B1371f22C00e621a6105',
     chainInfo: {
       chainId: 5,
       name: 'goerli',
@@ -53,4 +53,24 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
+  100: {
+    registry: '0x1e7d31283Dc1fACd0aCFe8A71355aD04870DE6Ce',
+    [constants.bridges.Hop]: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
+    [constants.bridges.AnySwap]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
+    chainInfo: {
+      chainId: 100,
+      name: 'xDai',
+      isL1: false,
+    },
+  },
+  137: {
+    registry: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
+    [constants.bridges.Hop]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
+    [constants.bridges.AnySwap]: '0xED682B571FB1F6FfF7c7bA988740f93Ac8578a7d',
+    chainInfo: {
+      chainId: 137,
+      name: 'polygon',
+      isL1: false,
+    },
+  }
 }
