@@ -2,6 +2,15 @@ import { constants } from '../constants'
 import { Address } from './type'
 export const addresses: { [chainId: number]: Address } = {
   1: {
+    registry: '0x7Bd1a6561c740F7Bc3737806F4BeBC59496578CC',
+    [constants.bridges.Hop]: '0xe0A222461297eC5aEB00300e7E4b4D7f4527c2BB',
+    [constants.bridges.PolygonBridge]:
+      '0x0E57ad390DB8DE60976ff19eb62C27DEaF4BCB67',
+    chainInfo: {
+      chainId: 1,
+      name: 'mainnet',
+      isL1: true,
+    },
     extraData: {
       ERC20PredicateProxy: '0x40ec5B33f54e0E8A33A975908C5BA1c14e5BbbDf',
       ERC721PredicateProxy: '0xE6F45376f64e1F568BD1404C155e5fFD2F80F7AD',
@@ -72,5 +81,5 @@ export const addresses: { [chainId: number]: Address } = {
       name: 'polygon',
       isL1: false,
     },
-  }
+  },
 }
