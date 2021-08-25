@@ -75,7 +75,7 @@ export const addresses: { [chainId: number]: Address } = {
   137: {
     registry: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
     [constants.bridges.Hop]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
-    [constants.bridges.AnySwap]: '0xED682B571FB1F6FfF7c7bA988740f93Ac8578a7d',
+    [constants.bridges.AnySwapRouterV4]: '0x80589802C34858Fa9ae0C526bF8972D5fFc4d9DF',
     chainInfo: {
       chainId: 137,
       name: 'polygon',

@@ -2,7 +2,7 @@ export const constants = {
   bridges: {
     Hop: 'hop',
     AnySwap: 'anyswap',
-    AnySwapRouter: 'anyswap-router',
+    AnySwapRouterV4: 'anyswap-router-v4',
     PolygonBridge: 'polygon-bridge',
     ArbitrumBridge: 'arbitrum-bridge',
   },
