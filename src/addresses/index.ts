@@ -53,9 +53,10 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
   80001: {
-    registry: '0x44b86641f0be14a76A7aC13e078f1721A58C594d',
-    [constants.bridges.Hop]: '0x7900b1c27879c96676CB04147a412dbfcEC62AF4',
-    [constants.bridges.AnySwap]: '0xE000893e4001295f458366Ec6670406b982592fD',
+    registry: '0x7Bd1a6561c740F7Bc3737806F4BeBC59496578CC',
+    [constants.bridges.Hop]: '0xe0A222461297eC5aEB00300e7E4b4D7f4527c2BB',
+    [constants.bridges.AnySwap]: '0x0E57ad390DB8DE60976ff19eb62C27DEaF4BCB67',
+    [constants.bridges.Hyphen]: '0xFB1B607F03311Ed21bd650F3D0c511BD8C9aA5ab',
     chainInfo: {
       chainId: 80001,
       name: 'mumbai',
