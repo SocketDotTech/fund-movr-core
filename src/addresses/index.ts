@@ -83,4 +83,10 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
+  4: {
+    registry: '0xBafCA3fba40EbB8D0Cf093Dc761D2BeE9A2F0DCf',
+    [constants.bridges.Hop]: '0x1e7d31283Dc1fACd0aCFe8A71355aD04870DE6Ce',
+    [constants.bridges.PolygonBridge]: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
+    [constants.bridges.ArbitrumBridge]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be'
+  }
 }
