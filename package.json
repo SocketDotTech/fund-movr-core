@@ -1,15 +1,15 @@
 {
   "name": "@movr/fund-movr-core",
-  "version": "0.0.1-beta.17",
+  "version": "0.0.1-beta.18",
   "description": "Core package for fund movr",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "npm run version && npm run build:ts",
+    "build": "npm run build:ts",
     "build:ts": "tsc",
     "lint": "prettier-standard --format '**/*.{ts}'",
-    "publish:beta": "npm publish --tag beta --access public",
+    "publish:beta": "npm run build && npm publish --tag beta --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
