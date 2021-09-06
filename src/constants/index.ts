@@ -5,6 +5,7 @@ export const constants = {
     AnySwapRouterV4: 'anyswap-router-v4',
     PolygonBridge: 'polygon-bridge',
     ArbitrumBridge: 'arbitrum-bridge',
+    Hyphen:'hyphen',
   },
   chains: {
     GOERLI_CHAIN_ID: 5,
