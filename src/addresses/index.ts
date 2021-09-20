@@ -1,19 +1,66 @@
 import { constants } from '../constants'
 import { Address } from './type'
 export const addresses: { [chainId: number]: Address } = {
-  80001: {
-    registry: '0x72F8ba665D81931dBba1A0717D7a1BAf71d66246',
-    [constants.bridges.Hop]: '0x589236f61b971919F49014F4633484DF356Dd2Fb',
-    [constants.bridges.AnySwapRouterV4]:
-      '0xeF9a0eb3e73f2c0A374a030ee3c7df528fB08828',
-    [constants.bridges.Hyphen]: '0x8FC206D026E44b0fA88a3A0AEb53534f1300D789',
-    [constants.middleware.OneInch]:
-      '0x1765b308001753901c7A676d0E1cCE5d03e18dd0',
+  
+  56: {
+    registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
+    [constants.bridges.AnySwapRouterV4]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
+    [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
+    routeIds: {
+      [constants.bridges.AnySwapRouterV4]: 1,
+      [constants.middleware.OneInch]: 2,
+    },
+    chainInfo: {
+      chainId: 56,
+      name: 'bsc',
+      isL1: false,
+    },
+  },
+  100: {
+    registry: '0xaD8D3C555c2abc9713Cb5d2ff03b59343ff4c4Ad',
+    [constants.bridges.Hop]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
     routeIds: {
       [constants.bridges.Hop]: 1,
-      [constants.bridges.AnySwapRouterV4]: 2,
-      [constants.bridges.Hyphen]: 3,
-      [constants.middleware.OneInch]: 4,
+    },
+    chainInfo: {
+      chainId: 100,
+      name: 'xdai',
+      isL1: false,
+    },
+  },
+  42: {
+    registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
+    [constants.bridges.Hop]: '0x43AA68673e54e95E07e8388BDd8612Abe6Df6F81',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+    },
+    chainInfo: {
+      chainId: 42,
+      name: 'kovan',
+      isL1: true,
+    },
+  },
+  5: {
+    registry: '0x42341C7648E716D0ff5CF9b61dF054868140CFB1',
+    [constants.bridges.Hop]: '0xBB3004F7f4E5cCe7aE680995331133145c91282f',
+    [constants.bridges.PolygonBridge]: '0x07615dc8fE3814fFCcC430197D4867309165b069',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.PolygonBridge]: 2,
+    },
+    chainInfo: {
+      chainId: 5,
+      name: 'goerli',
+      isL1: true,
+    },
+  },
+  80001: {
+    registry: '0x9CEa852423fDCb5d7Da955B4a5eE18d490A0FD7b',
+    [constants.bridges.Hop]: '0xB6CC947904a7F4B62eb3BFf05F0DBCA2ddb9e7a7',
+    [constants.bridges.Hyphen]: '0x3820fBEfee1A8D9BFB8c5bac6F12267617303d96',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hyphen]: 2,
     },
     chainInfo: {
       chainId: 80001,
@@ -22,13 +69,13 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
   137: {
-    registry: '0x33694ef1a68268C009f3FA0B6F012F748745A5E9',
-    [constants.bridges.Hop]: '0x242D296f4CFfD6eA0ea030194396ab5a4eb11a54',
+    registry: '0xcA09F09e0F7B93f19e5a29fBE0486606fF32BB4E',
+    [constants.bridges.Hop]: '0xDB4592E96275a9feE6134Dd940F3ae2D0D7d8292',
     [constants.bridges.AnySwapRouterV4]:
-      '0x5464f7297e44049Ac89587A6BfA4e1431a0F0c1c',
-    [constants.bridges.Hyphen]: '0xE30AEE439a4b5355386444D38e7495d7fd6B8249',
+      '0x3901581b7FF54667A2Bf51cB93DBa704E60E24f4',
+    [constants.bridges.Hyphen]: '0xA9c0feFC95761DEbfCD7b918366755D5d3b9E073',
     [constants.middleware.OneInch]:
-      '0xfD4C7083dBB0e80867011ef84b5FC9dA80D63E17',
+      '0xF36104a962D2Dc77b985Cd3f5022bE4e1E616bA5',
     routeIds: {
       [constants.bridges.Hop]: 1,
       [constants.bridges.AnySwapRouterV4]: 2,
@@ -42,16 +89,11 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
   4: {
-    registry: '0xBafCA3fba40EbB8D0Cf093Dc761D2BeE9A2F0DCf',
-    [constants.bridges.Hop]: '0x1e7d31283Dc1fACd0aCFe8A71355aD04870DE6Ce',
-    [constants.bridges.PolygonBridge]:
-      '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
+    registry: '0x8FC206D026E44b0fA88a3A0AEb53534f1300D789',
     [constants.bridges.ArbitrumBridge]:
-      '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
+      '0x1765b308001753901c7A676d0E1cCE5d03e18dd0',
     routeIds: {
-      [constants.bridges.Hop]: 1,
-      [constants.bridges.PolygonBridge]: 2,
-      [constants.bridges.ArbitrumBridge]: 3,
+      [constants.bridges.ArbitrumBridge]: 1,
     },
     chainInfo: {
       chainId: 4,
