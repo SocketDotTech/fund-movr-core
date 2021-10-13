@@ -1,82 +1,87 @@
 import { constants } from '../constants'
 import { Address } from './type'
 export const addresses: { [chainId: number]: Address } = {
-  1: {
-    registry: '0x7Bd1a6561c740F7Bc3737806F4BeBC59496578CC',
-    [constants.bridges.Hop]: '0xe0A222461297eC5aEB00300e7E4b4D7f4527c2BB',
-    [constants.bridges.PolygonBridge]:
-      '0x0E57ad390DB8DE60976ff19eb62C27DEaF4BCB67',
-    chainInfo: {
-      chainId: 1,
-      name: 'mainnet',
-      isL1: true,
+  
+  56: {
+    registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
+    [constants.bridges.AnySwapRouterV4]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
+    [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
+    routeIds: {
+      [constants.bridges.AnySwapRouterV4]: 1,
+      [constants.middleware.OneInch]: 2,
     },
-    extraData: {
-      ERC20PredicateProxy: '0x40ec5B33f54e0E8A33A975908C5BA1c14e5BbbDf',
-      ERC721PredicateProxy: '0xE6F45376f64e1F568BD1404C155e5fFD2F80F7AD',
-      RootChainManagerProxy: '0xA0c68C638235ee32657e8f720a23ceC1bFc77C77',
+    chainInfo: {
+      chainId: 56,
+      name: 'bsc',
+      isL1: false,
     },
   },
-  5: {
-    registry: '0xCB1463E75D57121135Eb037079F6C6B04d635822',
-    [constants.bridges.Hop]: '0xCB6db7eff52E4558aBE5A03edA87093333ff7615',
-    [constants.bridges.PolygonBridge]:
-      '0xd2ed8218a109882c23e5B1371f22C00e621a6105',
-    chainInfo: {
-      chainId: 5,
-      name: 'goerli',
-      isL1: true,
+  100: {
+    registry: '0xaD8D3C555c2abc9713Cb5d2ff03b59343ff4c4Ad',
+    [constants.bridges.Hop]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
     },
-    extraData: {
-      RootChainManagerProxy: '0xBbD7cBFA79faee899Eaf900F13C9065bF03B1A74',
-      ERC20PredicateProxy: '0xdD6596F2029e6233DEFfaCa316e6A95217d4Dc34',
-      ERC721PredicateProxy: '0x74D83801586E9D3C4dc45FfCD30B54eA9C88cf9b',
+    chainInfo: {
+      chainId: 100,
+      name: 'xdai',
+      isL1: false,
     },
   },
   42: {
-    registry: '0x55aDfcd3a1493dd92DD583b194D075997CbDC4ab',
-    [constants.bridges.Hop]: '0x3B32321a33690b98BC6D0264722aD98851F245BF',
+    registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
+    [constants.bridges.Hop]: '0x43AA68673e54e95E07e8388BDd8612Abe6Df6F81',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+    },
     chainInfo: {
       chainId: 42,
       name: 'kovan',
       isL1: true,
     },
   },
-  77: {
-    registry: '0x0cc843ff7B3a2DDb2a8CD8AD632C7D0414ac5595',
-    [constants.bridges.Hop]: '0x8260339a2Eab94464EB4Ff2A449F8e282343C8Ed',
-    [constants.bridges.AnySwap]: '0x30196C29E733241F2d4A655C8622Faf5d27B77e3',
+  5: {
+    registry: '0x42341C7648E716D0ff5CF9b61dF054868140CFB1',
+    [constants.bridges.Hop]: '0xBB3004F7f4E5cCe7aE680995331133145c91282f',
+    [constants.bridges.PolygonBridge]: '0x07615dc8fE3814fFCcC430197D4867309165b069',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.PolygonBridge]: 2,
+    },
     chainInfo: {
-      chainId: 77,
-      name: 'sokol',
-      isL1: false,
+      chainId: 5,
+      name: 'goerli',
+      isL1: true,
     },
   },
   80001: {
-    registry: '0x7Bd1a6561c740F7Bc3737806F4BeBC59496578CC',
-    [constants.bridges.Hop]: '0xe0A222461297eC5aEB00300e7E4b4D7f4527c2BB',
-    [constants.bridges.AnySwap]: '0x0E57ad390DB8DE60976ff19eb62C27DEaF4BCB67',
-    [constants.bridges.Hyphen]: '0xFB1B607F03311Ed21bd650F3D0c511BD8C9aA5ab',
+    registry: '0x9CEa852423fDCb5d7Da955B4a5eE18d490A0FD7b',
+    [constants.bridges.Hop]: '0xB6CC947904a7F4B62eb3BFf05F0DBCA2ddb9e7a7',
+    [constants.bridges.Hyphen]: '0x3820fBEfee1A8D9BFB8c5bac6F12267617303d96',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hyphen]: 2,
+    },
     chainInfo: {
       chainId: 80001,
       name: 'mumbai',
       isL1: false,
     },
   },
-  100: {
-    registry: '0x1e7d31283Dc1fACd0aCFe8A71355aD04870DE6Ce',
-    [constants.bridges.Hop]: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
-    [constants.bridges.AnySwap]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
-    chainInfo: {
-      chainId: 100,
-      name: 'xDai',
-      isL1: false,
-    },
-  },
   137: {
-    registry: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
-    [constants.bridges.Hop]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
-    [constants.bridges.AnySwapRouterV4]: '0x80589802C34858Fa9ae0C526bF8972D5fFc4d9DF',
+    registry: '0xcA09F09e0F7B93f19e5a29fBE0486606fF32BB4E',
+    [constants.bridges.Hop]: '0xDB4592E96275a9feE6134Dd940F3ae2D0D7d8292',
+    [constants.bridges.AnySwapRouterV4]:
+      '0x3901581b7FF54667A2Bf51cB93DBa704E60E24f4',
+    [constants.bridges.Hyphen]: '0xA9c0feFC95761DEbfCD7b918366755D5d3b9E073',
+    [constants.middleware.OneInch]:
+      '0xF36104a962D2Dc77b985Cd3f5022bE4e1E616bA5',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.AnySwapRouterV4]: 2,
+      [constants.bridges.Hyphen]: 3,
+      [constants.middleware.OneInch]: 4,
+    },
     chainInfo: {
       chainId: 137,
       name: 'polygon',
@@ -84,14 +89,16 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
   4: {
-    registry: '0xBafCA3fba40EbB8D0Cf093Dc761D2BeE9A2F0DCf',
-    [constants.bridges.Hop]: '0x1e7d31283Dc1fACd0aCFe8A71355aD04870DE6Ce',
-    [constants.bridges.PolygonBridge]: '0xEbfC1C3BCbd31D69097664A9555ad8D7f6784e8A',
-    [constants.bridges.ArbitrumBridge]: '0x0FDdf4922A19D61DB84Fbe4e823E80Bd1a4F22Be',
-     chainInfo: {
+    registry: '0x8FC206D026E44b0fA88a3A0AEb53534f1300D789',
+    [constants.bridges.ArbitrumBridge]:
+      '0x1765b308001753901c7A676d0E1cCE5d03e18dd0',
+    routeIds: {
+      [constants.bridges.ArbitrumBridge]: 1,
+    },
+    chainInfo: {
       chainId: 4,
       name: 'rinkeby',
       isL1: true,
     },
-  }
+  },
 }

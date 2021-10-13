@@ -7,6 +7,9 @@ export const constants = {
     ArbitrumBridge: 'arbitrum-bridge',
     Hyphen:'hyphen',
   },
+  middleware: {
+    OneInch: 'oneinch',
+  },
   chains: {
     GOERLI_CHAIN_ID: 5,
     KOVAN_CHAIN_ID: 42,
