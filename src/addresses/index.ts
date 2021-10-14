@@ -37,7 +37,7 @@ export const addresses: { [chainId: number]: Address } = {
   
   56: {
     registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
-    [constants.bridges.AnySwapRouterV4]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
+    [constants.bridges.AnySwapRouterV4]: '0x43aa68673e54e95e07e8388bdd8612abe6df6f81',
     [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
