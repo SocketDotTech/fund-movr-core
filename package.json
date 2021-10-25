@@ -1,6 +1,6 @@
 {
   "name": "@movr/fund-movr-core",
-  "version": "0.0.1-beta.23",
+  "version": "0.0.1-beta.25",
   "description": "Core package for fund movr",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

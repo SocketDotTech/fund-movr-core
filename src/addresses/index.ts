@@ -106,7 +106,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]: '0xDB4592E96275a9feE6134Dd940F3ae2D0D7d8292',
     [constants.bridges.AnySwapRouterV4]:
       '0x3901581b7FF54667A2Bf51cB93DBa704E60E24f4',
-    [constants.bridges.Hyphen]: '0xA9c0feFC95761DEbfCD7b918366755D5d3b9E073',
+    [constants.bridges.Hyphen]: '0xaa52624ac43ef5099d96975802a7da59b1a5277a',
     [constants.middleware.OneInch]:
       '0xF36104a962D2Dc77b985Cd3f5022bE4e1E616bA5',
     routeIds: {
