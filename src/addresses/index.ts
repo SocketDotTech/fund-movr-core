@@ -38,7 +38,7 @@ export const addresses: { [chainId: number]: Address } = {
   56: {
     registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
     [constants.bridges.AnySwapRouterV4]: '0x43aa68673e54e95e07e8388bdd8612abe6df6f81',
-    [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
+    [constants.middleware.OneInch]: '0xED682B571FB1F6FfF7c7bA988740f93Ac8578a7d',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
       [constants.middleware.OneInch]: 2,
@@ -108,7 +108,7 @@ export const addresses: { [chainId: number]: Address } = {
       '0x3901581b7FF54667A2Bf51cB93DBa704E60E24f4',
     [constants.bridges.Hyphen]: '0xaa52624ac43ef5099d96975802a7da59b1a5277a',
     [constants.middleware.OneInch]:
-      '0xF36104a962D2Dc77b985Cd3f5022bE4e1E616bA5',
+      '0x2fc9C3Bf505b74e59A538Fe9D67BC1DEB4C03d91',
     routeIds: {
       [constants.bridges.Hop]: 1,
       [constants.bridges.AnySwapRouterV4]: 2,
