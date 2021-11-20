@@ -1,11 +1,44 @@
 import { constants } from '../constants'
 import { Address } from './type'
 export const addresses: { [chainId: number]: Address } = {
+  1: {
+    registry: '0x6D290609b3F5F02D52F28d97C75a443ED8564cBf',
+    [constants.bridges.Hop]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [constants.bridges.PolygonBridge]:
+      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      [constants.bridges.ArbitrumBridge]:
+      '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+      [constants.bridges.Hyphen]:
+      '0xc317144DE60E6bC9455363bB09852C00bd14CD61',
+      [constants.bridges.AnySwapRouterV4]:
+      '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
+      [constants.middleware.OneInch]:
+      '0x8f9EaEe5c5df888aBA3c1Ab19689a0660d042c6d',
+
+      routeIds: {
+        [constants.bridges.Hop]: 1,
+        [constants.bridges.PolygonBridge]: 2,
+        [constants.bridges.ArbitrumBridge]: 3,
+        [constants.bridges.Hyphen]: 4,
+        [constants.bridges.AnySwapRouterV4]: 5,
+        [constants.middleware.OneInch]: 6,
+      },
+    chainInfo: {
+      chainId: 1,
+      name: 'mainnet',
+      isL1: true,
+    },
+    extraData: {
+      ERC20PredicateProxy: '0x40ec5B33f54e0E8A33A975908C5BA1c14e5BbbDf',
+      ERC721PredicateProxy: '0xE6F45376f64e1F568BD1404C155e5fFD2F80F7AD',
+      RootChainManagerProxy: '0xA0c68C638235ee32657e8f720a23ceC1bFc77C77',
+    },
+  },
   
   56: {
     registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
-    [constants.bridges.AnySwapRouterV4]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
-    [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
+    [constants.bridges.AnySwapRouterV4]: '0x43aa68673e54e95e07e8388bdd8612abe6df6f81',
+    [constants.middleware.OneInch]: '0xED682B571FB1F6FfF7c7bA988740f93Ac8578a7d',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
       [constants.middleware.OneInch]: 2,
@@ -73,9 +106,9 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]: '0xDB4592E96275a9feE6134Dd940F3ae2D0D7d8292',
     [constants.bridges.AnySwapRouterV4]:
       '0x3901581b7FF54667A2Bf51cB93DBa704E60E24f4',
-    [constants.bridges.Hyphen]: '0xA9c0feFC95761DEbfCD7b918366755D5d3b9E073',
+    [constants.bridges.Hyphen]: '0xaa52624ac43ef5099d96975802a7da59b1a5277a',
     [constants.middleware.OneInch]:
-      '0xF36104a962D2Dc77b985Cd3f5022bE4e1E616bA5',
+      '0x2fc9C3Bf505b74e59A538Fe9D67BC1DEB4C03d91',
     routeIds: {
       [constants.bridges.Hop]: 1,
       [constants.bridges.AnySwapRouterV4]: 2,
