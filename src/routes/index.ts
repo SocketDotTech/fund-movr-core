@@ -99,4 +99,35 @@ export const routes = {
             1: constants.bridges.ArbitrumBridge,
         },
     },
+    250: {
+        bridgeIds: {
+            [constants.bridges.AnySwapRouterV4]: 1
+        },
+        bridgeNames: {
+            1: constants.bridges.AnySwapRouterV4,
+        },
+    },
+    43114: {
+        bridgeIds: {
+            [constants.bridges.AnySwapRouterV4]: 1
+        },
+        bridgeNames: {
+            1: constants.bridges.AnySwapRouterV4,
+        },
+    },
+    42161: {
+        bridgeIds: {
+            [constants.bridges.Hop]: 2
+        },
+        middlewareIds: {
+            [constants.middleware.OneInch]: 1,
+        },
+        bridgeNames: {
+            2: constants.bridges.Hop,
+        },
+        middlewareNames: {
+            1: constants.middleware.OneInch,
+        }
+    },
+
 }
