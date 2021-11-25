@@ -49,6 +49,46 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
+  250: {
+    registry: '0x0e9528801524413FfC467A9CF1e4Dd25Cd7BC700',
+    [constants.bridges.AnySwapRouterV4]: '0xBafCA3fba40EbB8D0Cf093Dc761D2BeE9A2F0DCf',
+    routeIds: {
+      [constants.bridges.AnySwapRouterV4]: 1,
+    },
+    chainInfo: {
+      chainId: 250,
+      name: 'fantom',
+      isL1: false,
+    },
+  },
+
+  42161: {
+    registry: '0x0b6a733c770Ada091bFf20d60a569e96AD695d2f',
+    [constants.bridges.Hop]: '0x43AA68673e54e95E07e8388BDd8612Abe6Df6F81',
+    [constants.middleware.OneInch]: '0x6Ae552136C8D9731F0aCF3beDB37183669eA4daC',
+    routeIds: {
+      [constants.middleware.OneInch]: 1,
+      [constants.bridges.Hop]: 2,
+    },
+    chainInfo: {
+      chainId: 42161,
+      name: 'arbitrum',
+      isL1: false,
+    },
+  }, 
+  43114: {
+    registry: '0x0b6a733c770ada091bff20d60a569e96ad695d2f',
+    [constants.bridges.AnySwapRouterV4]: '0x0e9528801524413FfC467A9CF1e4Dd25Cd7BC700',
+    routeIds: {
+      [constants.bridges.AnySwapRouterV4]: 1,
+    },
+    chainInfo: {
+      chainId: 43114,
+      name: 'avax',
+      isL1: false,
+    },
+  } ,
+
   100: {
     registry: '0xaD8D3C555c2abc9713Cb5d2ff03b59343ff4c4Ad',
     [constants.bridges.Hop]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
