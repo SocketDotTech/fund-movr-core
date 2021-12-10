@@ -1,17 +1,34 @@
 [
   {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
     "anonymous": false,
     "inputs": [
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "",
+        "name": "middlewareID",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "",
+        "name": "bridgeID",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inputAmount",
         "type": "uint256"
       }
     ],
@@ -24,25 +41,25 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "",
+        "name": "routeID",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "address",
-        "name": "",
+        "name": "route",
         "type": "address"
       },
       {
         "indexed": false,
         "internalType": "bool",
-        "name": "",
+        "name": "isEnabled",
         "type": "bool"
       },
       {
         "indexed": false,
         "internalType": "bool",
-        "name": "",
+        "name": "isMiddleware",
         "type": "bool"
       }
     ],
@@ -74,29 +91,11 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "",
+        "name": "routeID",
         "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      },
-      {
-        "indexed": false,
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
       }
     ],
-    "name": "RouteUpdated",
+    "name": "RouteDisabled",
     "type": "event"
   },
   {
@@ -110,7 +109,7 @@
           },
           {
             "internalType": "bool",
-            "name": "enabled",
+            "name": "isEnabled",
             "type": "bool"
           },
           {
@@ -138,10 +137,23 @@
   {
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "_routeId",
+        "type": "uint256"
+      }
+    ],
+    "name": "disableRoute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "components": [
           {
             "internalType": "address",
-            "name": "to",
+            "name": "receiverAddress",
             "type": "address"
           },
           {
@@ -155,38 +167,62 @@
             "type": "uint256"
           },
           {
-            "internalType": "address",
-            "name": "tokenToBridge",
-            "type": "address"
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionalNativeAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "inputToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct Registry.MiddlewareRequest",
+            "name": "middlewareRequest",
+            "type": "tuple"
           },
           {
-            "internalType": "address",
-            "name": "middlewareInputToken",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "bridgeID",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "middlewareID",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bytes",
-            "name": "bridgeData",
-            "type": "bytes"
-          },
-          {
-            "internalType": "bytes",
-            "name": "middlewareData",
-            "type": "bytes"
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "optionalNativeAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "inputToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct Registry.BridgeRequest",
+            "name": "bridgeRequest",
+            "type": "tuple"
           }
         ],
-        "internalType": "struct Registry.InputData",
-        "name": "_input",
+        "internalType": "struct Registry.UserRequest",
+        "name": "_userRequest",
         "type": "tuple"
       }
     ],
@@ -219,17 +255,17 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "token",
+        "name": "_token",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "userAddress",
+        "name": "_receiverAddress",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_amount",
         "type": "uint256"
       }
     ],
@@ -255,7 +291,7 @@
       },
       {
         "internalType": "bool",
-        "name": "enabled",
+        "name": "isEnabled",
         "type": "bool"
       },
       {
@@ -281,38 +317,7 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_routeId",
-        "type": "uint256"
-      },
-      {
-        "components": [
-          {
-            "internalType": "address",
-            "name": "route",
-            "type": "address"
-          },
-          {
-            "internalType": "bool",
-            "name": "enabled",
-            "type": "bool"
-          },
-          {
-            "internalType": "bool",
-            "name": "isMiddleware",
-            "type": "bool"
-          }
-        ],
-        "internalType": "struct Registry.RouteData",
-        "name": "_routeData",
-        "type": "tuple"
-      }
-    ],
-    "name": "updateRoute",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    "stateMutability": "payable",
+    "type": "receive"
   }
 ]
