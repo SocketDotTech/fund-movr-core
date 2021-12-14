@@ -6,8 +6,9 @@ export const routes = {
             [constants.bridges.Hop]: 1,
             [constants.bridges.PolygonBridge]: 2,
             [constants.bridges.ArbitrumBridge]: 3,
-            [constants.bridges.Hyphen]: 4,
-            [constants.bridges.AnySwapRouterV4]: 5,
+            [constants.bridges.AnySwapRouterV4]: 4,
+            [constants.bridges.Hyphen]: 5,
+      
         },
         middlewareIds: {
             [constants.middleware.OneInch]: 6,
@@ -16,8 +17,9 @@ export const routes = {
             1: constants.bridges.Hop,
             2: constants.bridges.PolygonBridge,
             3: constants.bridges.ArbitrumBridge,
-            4: constants.bridges.Hyphen,
-            5: constants.bridges.AnySwapRouterV4,
+            4: constants.bridges.AnySwapRouterV4,
+            5: constants.bridges.Hyphen,
+       
         },
         middlewareNames: {
             6: constants.middleware.OneInch,
