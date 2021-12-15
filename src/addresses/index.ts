@@ -12,7 +12,7 @@ export const addresses: { [chainId: number]: Address } = {
       '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
     [constants.bridges.Hyphen]: '0xBE51D38547992293c89CC589105784ab60b004A9',
     [constants.middleware.OneInch]:
-      '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
+      '0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8',
 
     routeIds: {
       [constants.bridges.Hop]: 1,
