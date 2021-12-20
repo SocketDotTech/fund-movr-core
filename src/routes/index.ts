@@ -109,26 +109,44 @@ export const routes = {
             1: constants.bridges.AnySwapRouterV4,
         },
     },
+    10: {
+        bridgeIds: {
+            [constants.bridges.Hop]: 1
+        },
+        bridgeNames: {
+            1: constants.bridges.Hop,
+        },
+        middlewareIds: {
+            [constants.middleware.OneInch]: 2,
+        },
+        middlewareNames: {
+            2: constants.middleware.OneInch,
+        },
+    },
     43114: {
         bridgeIds: {
-            [constants.bridges.AnySwapRouterV4]: 1
+            [constants.bridges.AnySwapRouterV4]: 1,
+            [constants.bridges.Hyphen]: 2
         },
         bridgeNames: {
             1: constants.bridges.AnySwapRouterV4,
+            2: constants.bridges.AnySwapRouterV4,
         },
     },
     42161: {
         bridgeIds: {
-            [constants.bridges.Hop]: 2
+            [constants.bridges.Hop]: 1,
+            [constants.bridges.AnySwapRouterV4]: 2
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 1,
+            [constants.middleware.OneInch]: 3,
         },
         bridgeNames: {
-            2: constants.bridges.Hop,
+            1: constants.bridges.Hop,
+            2: constants.bridges.AnySwapRouterV4,
         },
         middlewareNames: {
-            1: constants.middleware.OneInch,
+            3: constants.middleware.OneInch,
         }
     },
 
