@@ -63,6 +63,56 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
+  43114: {
+    registry: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [constants.bridges.AnySwapRouterV4]:
+      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      [constants.bridges.Hyphen]:
+      '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+    routeIds: {
+      [constants.bridges.AnySwapRouterV4]: 1,
+      [constants.bridges.Hyphen]: 2,
+    },
+    chainInfo: {
+      chainId: 43114,
+      name: 'Avalanche',
+      isL1: false,
+    },
+  },
+  10: {
+    registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
+    [constants.bridges.Hop]:
+      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      [constants.middleware.OneInch]:
+      '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.middleware.OneInch]: 2,
+    },
+    chainInfo: {
+      chainId: 10,
+      name: 'Optimism',
+      isL1: false,
+    },
+  },
+  42161: {
+    registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
+    [constants.bridges.Hop]:
+      '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+      [constants.bridges.AnySwapRouterV4]:
+      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      [constants.middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+    routeIds: {
+      [constants.bridges.Hop]: 1,
+      [constants.bridges.AnySwapRouterV4]: 2,
+      [constants.middleware.OneInch]: 3,
+    },
+    chainInfo: {
+      chainId: 42161,
+      name: 'Arbitrum',
+      isL1: false,
+    },
+  },
 
   100: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',

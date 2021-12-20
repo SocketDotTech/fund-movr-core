@@ -24,5 +24,7 @@ export const constants = {
     ARBITRUM_CHAIN_ID: 42161,
     FANTOM_CHAIN_ID: 250,
     OPTIMISM_CHAIN_ID: 10,
+    AVAX_CHAIN_ID: 43114,
+    BSC_CHAIN_ID: 56,
   },
 }
