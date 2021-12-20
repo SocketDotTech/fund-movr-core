@@ -130,7 +130,7 @@ export const routes = {
         },
         bridgeNames: {
             1: constants.bridges.AnySwapRouterV4,
-            2: constants.bridges.AnySwapRouterV4,
+            2: constants.bridges.Hyphen,
         },
     },
     42161: {
