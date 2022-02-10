@@ -30,13 +30,13 @@ export const routes = {
             [constants.bridges.AnySwapRouterV4]: 1
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 2,
+            [constants.middleware.OneInch]: 3,
         },
         bridgeNames: {
             1: constants.bridges.AnySwapRouterV4,
         },
         middlewareNames: {
-            2: constants.middleware.OneInch,
+            3: constants.middleware.OneInch,
         }
     },
     100: {
@@ -45,6 +45,12 @@ export const routes = {
         },
         bridgeNames: {
             1: constants.bridges.Hop,
+        },
+        middlewareNames: {
+            2: constants.middleware.OneInch,
+        },
+        middlewareIds: {
+            [constants.middleware.OneInch]: 2,
         },
     },
     42: {
@@ -87,10 +93,10 @@ export const routes = {
             3: constants.bridges.Hyphen
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 4,
+            [constants.middleware.OneInch]: 5,
         },
         middlewareNames: {
-            4: constants.middleware.OneInch,
+            5: constants.middleware.OneInch,
         },
     },
     4: {
@@ -117,10 +123,10 @@ export const routes = {
             1: constants.bridges.Hop,
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 2,
+            [constants.middleware.OneInch]: 3,
         },
         middlewareNames: {
-            2: constants.middleware.OneInch,
+            3: constants.middleware.OneInch,
         },
     },
     43114: {
@@ -132,6 +138,12 @@ export const routes = {
             1: constants.bridges.AnySwapRouterV4,
             2: constants.bridges.Hyphen,
         },
+        middlewareNames: {
+            3: constants.middleware.OneInch,
+        },
+        middlewareIds: {
+            [constants.middleware.OneInch]: 3,
+        },
     },
     42161: {
         bridgeIds: {
@@ -139,14 +151,14 @@ export const routes = {
             [constants.bridges.AnySwapRouterV4]: 2
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 3,
+            [constants.middleware.OneInch]: 4,
         },
         bridgeNames: {
             1: constants.bridges.Hop,
             2: constants.bridges.AnySwapRouterV4,
         },
         middlewareNames: {
-            3: constants.middleware.OneInch,
+            4: constants.middleware.OneInch,
         }
     },
 

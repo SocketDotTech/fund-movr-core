@@ -39,10 +39,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.AnySwapRouterV4]:
       '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [constants.middleware.OneInch]:
-      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
-      [constants.middleware.OneInch]: 2,
+      [constants.middleware.OneInch]: 3,
     },
     chainInfo: {
       chainId: 56,
@@ -69,9 +69,11 @@ export const addresses: { [chainId: number]: Address } = {
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
       [constants.bridges.Hyphen]:
       '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+      [constants.middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
       [constants.bridges.Hyphen]: 2,
+      [constants.middleware.OneInch]: 3,
     },
     chainInfo: {
       chainId: 43114,
@@ -84,10 +86,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
       [constants.middleware.OneInch]:
-      '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+      '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     routeIds: {
       [constants.bridges.Hop]: 1,
-      [constants.middleware.OneInch]: 2,
+      [constants.middleware.OneInch]: 3,
     },
     chainInfo: {
       chainId: 10,
@@ -101,11 +103,11 @@ export const addresses: { [chainId: number]: Address } = {
       '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
       [constants.bridges.AnySwapRouterV4]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-      [constants.middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+      [constants.middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     routeIds: {
       [constants.bridges.Hop]: 1,
       [constants.bridges.AnySwapRouterV4]: 2,
-      [constants.middleware.OneInch]: 3,
+      [constants.middleware.OneInch]: 4,
     },
     chainInfo: {
       chainId: 42161,
@@ -117,8 +119,10 @@ export const addresses: { [chainId: number]: Address } = {
   100: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [constants.bridges.Hop]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [constants.middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     routeIds: {
       [constants.bridges.Hop]: 1,
+      [constants.middleware.OneInch]: 2,
     },
     chainInfo: {
       chainId: 100,
@@ -134,12 +138,12 @@ export const addresses: { [chainId: number]: Address } = {
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [constants.bridges.Hyphen]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     [constants.middleware.OneInch]:
-      '0xc317144DE60E6bC9455363bB09852C00bd14CD61',
+      '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     routeIds: {
       [constants.bridges.Hop]: 1,
       [constants.bridges.AnySwapRouterV4]: 2,
       [constants.bridges.Hyphen]: 3,
-      [constants.middleware.OneInch]: 4,
+      [constants.middleware.OneInch]: 5,
     },
     chainInfo: {
       chainId: 137,
