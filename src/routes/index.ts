@@ -114,6 +114,12 @@ export const routes = {
         bridgeNames: {
             1: constants.bridges.AnySwapRouterV4,
         },
+        middlewareIds: {
+            [constants.middleware.ZeroX]: 3,
+        },
+        middlewareNames: {
+            3: constants.middleware.ZeroX,
+        },
     },
     10: {
         bridgeIds: {
