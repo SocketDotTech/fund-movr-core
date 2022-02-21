@@ -9,6 +9,7 @@ export const constants = {
   },
   middleware: {
     OneInch: 'oneinch',
+    ZeroX: 'zerox'
   },
   chains: {
     GOERLI_CHAIN_ID: 5,
