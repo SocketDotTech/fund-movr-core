@@ -41,10 +41,10 @@ export const routes = {
     },
     100: {
         bridgeIds: {
-            [constants.bridges.Hop]: 1,
+            [constants.bridges.Hop]: 4,
         },
         bridgeNames: {
-            1: constants.bridges.Hop,
+            4: constants.bridges.Hop,
         },
         middlewareNames: {
             2: constants.middleware.OneInch,
@@ -83,12 +83,12 @@ export const routes = {
     },
     137: {
         bridgeIds: {
-            [constants.bridges.Hop]: 1,
+            [constants.bridges.Hop]: 7,
             [constants.bridges.AnySwapRouterV4]: 2,
             [constants.bridges.Hyphen]: 3
         },
         bridgeNames: {
-            1: constants.bridges.Hop,
+            7: constants.bridges.Hop,
             2: constants.bridges.AnySwapRouterV4,
             3: constants.bridges.Hyphen
         },
@@ -123,10 +123,10 @@ export const routes = {
     },
     10: {
         bridgeIds: {
-            [constants.bridges.Hop]: 1
+            [constants.bridges.Hop]: 4
         },
         bridgeNames: {
-            1: constants.bridges.Hop,
+            4: constants.bridges.Hop,
         },
         middlewareIds: {
             [constants.middleware.OneInch]: 3,
@@ -153,14 +153,14 @@ export const routes = {
     },
     42161: {
         bridgeIds: {
-            [constants.bridges.Hop]: 1,
+            [constants.bridges.Hop]: 5,
             [constants.bridges.AnySwapRouterV4]: 2
         },
         middlewareIds: {
             [constants.middleware.OneInch]: 4,
         },
         bridgeNames: {
-            1: constants.bridges.Hop,
+            5: constants.bridges.Hop,
             2: constants.bridges.AnySwapRouterV4,
         },
         middlewareNames: {
