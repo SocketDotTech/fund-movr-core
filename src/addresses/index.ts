@@ -87,11 +87,11 @@ export const addresses: { [chainId: number]: Address } = {
   10: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [constants.bridges.Hop]:
-      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+      '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
       [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     routeIds: {
-      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hop]: 4,
       [constants.middleware.OneInch]: 3,
     },
     chainInfo: {
@@ -103,12 +103,12 @@ export const addresses: { [chainId: number]: Address } = {
   42161: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [constants.bridges.Hop]:
-      '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+      '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
       [constants.bridges.AnySwapRouterV4]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
       [constants.middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     routeIds: {
-      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hop]: 5,
       [constants.bridges.AnySwapRouterV4]: 2,
       [constants.middleware.OneInch]: 4,
     },
@@ -121,10 +121,10 @@ export const addresses: { [chainId: number]: Address } = {
 
   100: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [constants.bridges.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [constants.middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     routeIds: {
-      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hop]: 4,
       [constants.middleware.OneInch]: 2,
     },
     chainInfo: {
@@ -136,14 +136,14 @@ export const addresses: { [chainId: number]: Address } = {
 
   137: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [constants.bridges.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
     [constants.bridges.AnySwapRouterV4]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [constants.bridges.Hyphen]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     [constants.middleware.OneInch]:
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     routeIds: {
-      [constants.bridges.Hop]: 1,
+      [constants.bridges.Hop]: 7,
       [constants.bridges.AnySwapRouterV4]: 2,
       [constants.bridges.Hyphen]: 3,
       [constants.middleware.OneInch]: 5,
