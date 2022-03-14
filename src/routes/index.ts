@@ -11,7 +11,7 @@ export const routes = {
       
         },
         middlewareIds: {
-            [constants.middleware.OneInch]: 6,
+            [constants.middleware.OneInch]: 7,
         },
         bridgeNames: {
             1: constants.bridges.Hop,
@@ -22,7 +22,7 @@ export const routes = {
        
         },
         middlewareNames: {
-            6: constants.middleware.OneInch,
+            7: constants.middleware.OneInch,
         }
       },
     56: {
