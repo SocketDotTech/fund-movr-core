@@ -6,6 +6,7 @@ export const constants = {
     PolygonBridge: 'polygon-bridge',
     ArbitrumBridge: 'arbitrum-bridge',
     Hyphen:'hyphen',
+    Across: 'across'
   },
   middleware: {
     OneInch: 'oneinch',

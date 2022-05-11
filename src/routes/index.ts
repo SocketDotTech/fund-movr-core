@@ -123,10 +123,12 @@ export const routes = {
     },
     10: {
         bridgeIds: {
-            [constants.bridges.Hop]: 4
+            [constants.bridges.Hop]: 4,
+            [constants.bridges.Across]: 5,
         },
         bridgeNames: {
             4: constants.bridges.Hop,
+            5: constants.bridges.Across,
         },
         middlewareIds: {
             [constants.middleware.OneInch]: 3,

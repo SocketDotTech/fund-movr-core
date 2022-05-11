@@ -90,9 +90,11 @@ export const addresses: { [chainId: number]: Address } = {
       '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
       [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
+    [constants.bridges.Across]: '0x2ddf16ba6d0180e5357d5e170ef1917a01b41fc0',
     routeIds: {
       [constants.bridges.Hop]: 4,
       [constants.middleware.OneInch]: 3,
+      [constants.bridges.Across]: 5
     },
     chainInfo: {
       chainId: 10,
