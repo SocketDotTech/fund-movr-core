@@ -6,6 +6,9 @@ export const constants = {
     PolygonBridge: 'polygon-bridge',
     ArbitrumBridge: 'arbitrum-bridge',
     Hyphen:'hyphen',
+    Across: 'across',
+    OptimismBridge: 'optimism-bridge',
+    Celer:'celer'
   },
   middleware: {
     OneInch: 'oneinch',
@@ -27,5 +30,6 @@ export const constants = {
     OPTIMISM_CHAIN_ID: 10,
     AVAX_CHAIN_ID: 43114,
     BSC_CHAIN_ID: 56,
+    AURORA_CHAIN_ID:1313161554
   },
 }
