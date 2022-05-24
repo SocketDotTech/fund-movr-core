@@ -7,7 +7,7 @@ export const routes = {
       [constants.bridges.PolygonBridge]: 2,
       [constants.bridges.ArbitrumBridge]: 3,
       [constants.bridges.AnySwapRouterV4]: 4,
-      [constants.bridges.Hyphen]: 5,
+      [constants.bridges.Hyphen]: 10,
       [constants.bridges.OptimismBridge]: 8,
       [constants.bridges.Celer]: 9,
     },
@@ -19,7 +19,7 @@ export const routes = {
       2: constants.bridges.PolygonBridge,
       3: constants.bridges.ArbitrumBridge,
       4: constants.bridges.AnySwapRouterV4,
-      5: constants.bridges.Hyphen,
+      10: constants.bridges.Hyphen,
       8: constants.bridges.OptimismBridge,
       9: constants.bridges.Celer,
     },
@@ -31,6 +31,7 @@ export const routes = {
     bridgeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
       [constants.bridges.Celer]: 4,
+      [constants.bridges.Hyphen]: 5,
     },
     middlewareIds: {
       [constants.middleware.OneInch]: 3,
@@ -38,6 +39,7 @@ export const routes = {
     bridgeNames: {
       1: constants.bridges.AnySwapRouterV4,
       4: constants.bridges.Celer,
+      5: constants.bridges.Hyphen,
     },
     middlewareNames: {
       3: constants.middleware.OneInch,
@@ -89,13 +91,13 @@ export const routes = {
     bridgeIds: {
       [constants.bridges.Hop]: 7,
       [constants.bridges.AnySwapRouterV4]: 2,
-      [constants.bridges.Hyphen]: 3,
+      [constants.bridges.Hyphen]: 9,
       [constants.bridges.Celer]: 8
     },
     bridgeNames: {
       7: constants.bridges.Hop,
       2: constants.bridges.AnySwapRouterV4,
-      3: constants.bridges.Hyphen,
+      9: constants.bridges.Hyphen,
       8: constants.bridges.Celer
     },
     middlewareIds: {
@@ -150,12 +152,12 @@ export const routes = {
   43114: {
     bridgeIds: {
       [constants.bridges.AnySwapRouterV4]: 1,
-      [constants.bridges.Hyphen]: 2,
+      [constants.bridges.Hyphen]: 5,
       [constants.bridges.Celer]:4, 
     },
     bridgeNames: {
       1: constants.bridges.AnySwapRouterV4,
-      2: constants.bridges.Hyphen,
+      5: constants.bridges.Hyphen,
       4: constants.bridges.Celer
     },
     middlewareNames: {
